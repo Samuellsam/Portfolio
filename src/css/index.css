@@ -1,0 +1,55 @@
+@import "bootstrap";
+@import "text-style.css";
+@import "home.css";
+@import "flip-card.css";
+@import "carousel.css";
+@import "back-button.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto+Mono:wght@300&display=swap");
+
+.clickable {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-nav-link,
+.top-nav-link:hover {
+  color: inherit;
+}
+
+.top-nav-link::after {
+  content: "";
+  display: block;
+  height: 0.2em;
+  width: 0%;
+  background-color: yellow;
+  transition: 500ms;
+  margin: auto;
+}
+
+.top-nav-link:hover::after,
+.top-nav-link-active::after {
+  width: 100%;
+}
+
+.navbar {
+  transition: 100ms;
+}
+
+.light-blue-color {
+  background-color: #3e497a;
+}
+
+.dark-blue-color {
+  background-color: #21325e;
+}

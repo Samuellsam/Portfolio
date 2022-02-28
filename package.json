@@ -1,0 +1,33 @@
+{
+  "name": "website-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "bootstrap": "^5.0.0",
+    "moment": "^2.29.1",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-tsparticles": "^1.41.5",
+    "tslib": "^2.3.1",
+    "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.1.6",
+    "@types/node": "^17.0.4",
+    "@types/react": "^17.0.38",
+    "typescript": "^4.5.4"
+  }
+}

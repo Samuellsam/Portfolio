@@ -1,0 +1,12 @@
+.carousel-left-btn,
+.carousel-right-btn {
+  position: absolute;
+}
+
+.carousel-left-btn {
+  left: 0;
+}
+
+.carousel-right-btn {
+  right: 0;
+}

@@ -1,0 +1,14 @@
+#portfolio-btn:hover {
+  background-color: brown !important;
+}
+
+.technical-icon-frame {
+  width: 50px;
+  height: 50px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}

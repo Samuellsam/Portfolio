@@ -1,0 +1,15 @@
+.back-btn {
+  background-color: #000c66 !important;
+  color: white;
+  left: -100%;
+  transition: left 1200ms;
+}
+
+.back-button-show {
+  left: 1%;
+}
+
+.back-btn:hover {
+  background-color: #41729f !important;
+  color: white;
+}
