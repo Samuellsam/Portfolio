@@ -57,7 +57,7 @@ const PersonalInformation: React.FunctionComponent<{}> = (props) => {
     
     return (
         <div className='ms-5'>
-            <InformationTemplate content={personalInformationContent} placeEnd={false} subTitle={"Who Am I?"} codeTextEnum={CodeTextLanguageEnum.C}
+            <InformationTemplate showProfileImg={true} content={personalInformationContent} placeEnd={false} subTitle={"Who Am I?"} codeTextEnum={CodeTextLanguageEnum.C}
                 header={
                     <h1 className='fw-bold'>
                         I'M SAMUEL, A <span id='who_am_i_typed' className='text-success'/>
@@ -186,9 +186,11 @@ const MyTechnicalSkills: React.FunctionComponent<{}> = (props) => {
     `;
 
     return (
-        <div className='ms-5'>
-            <PersonalInformationTemplate codeTextEnum={CodeTextLanguageEnum.C} content={myTechnicalSkillsContent} placeEnd={false} subTitle={'My Technical Skills'}/>
-            <div className="row d-flex justify-content-center">
+        <div>
+            <div className="ms-5">
+               <PersonalInformationTemplate codeTextEnum={CodeTextLanguageEnum.C} content={myTechnicalSkillsContent} placeEnd={false} subTitle={'My Technical Skills'}/>
+            </div>
+            <div className="row d-flex text-center">
                 <TechnicalSkillTemplate category="Programming Language" listTechnical={listProgrammingLanguage}/>
                 <TechnicalSkillTemplate category="Database" listTechnical={listDatabase}/>
                 <TechnicalSkillTemplate category="Framework" listTechnical={listFramework}/>

@@ -3,3 +3,6 @@
 .env.production
 .env.local
 .env.test
+.vercel
+.next
+node_modules

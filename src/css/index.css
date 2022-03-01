@@ -18,13 +18,13 @@ body {
 
 a,
 a:hover {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .top-nav-link,
 .top-nav-link:hover {
-  color: inherit;
+  color: inherit !important;
 }
 
 .top-nav-link::after {
@@ -52,4 +52,9 @@ a:hover {
 
 .dark-blue-color {
   background-color: #21325e;
+}
+
+.swiperStyle {
+  --swiper-navigation-color: #21325e;
+  --swiper-pagination-color: yellow;
 }

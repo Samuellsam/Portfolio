@@ -1,3 +1,5 @@
+import { faArrowCircleUp, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { githubData } from "../../interfaces/Portfolio";
 
 const ViewDemoButton: React.FunctionComponent<{
@@ -7,7 +9,7 @@ const ViewDemoButton: React.FunctionComponent<{
         if(props.demoLink) {
             return (
                 <a href={props.demoLink} className='btn btn-success mx-2 fw-bold border border-light border-3 rounded-pill' target={'_blank'}>
-                    View Website
+                    <FontAwesomeIcon icon={faArrowUp} className='me-2'></FontAwesomeIcon>View Website
                 </a>
             )
         }

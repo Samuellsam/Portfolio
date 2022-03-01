@@ -4,7 +4,7 @@ import { listIndividualProject, thesisProject } from "../../storage/ProjectStora
 import DownloadFileButton from "../buttons/DownloadFileButton";
 import ViewDemoButton from "../buttons/ViewDemoButton";
 import ViewSourceCodeButton from "../buttons/ViewSourceCodeButton";
-import CustomCarousel from "../CustomCarousel";
+import CustomSwiper from "../CustomSwiper";
 
 const DetailProjectTemplate: React.FunctionComponent<{
     projectId: string
@@ -24,7 +24,7 @@ const DetailProjectTemplate: React.FunctionComponent<{
 
     return (
         <div className="text-center">
-            <CustomCarousel images={projectData?.listScreenshootImgPath as string[]}/>
+            <CustomSwiper images={projectData?.listScreenshootImgPath as string[]}/>
             <br />
             <div className="w-75 mx-auto">
                 <h1>{projectData?.title}</h1>

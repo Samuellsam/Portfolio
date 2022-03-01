@@ -6,7 +6,7 @@ const TechnicalSkillItem: React.FunctionComponent<{
     item: TechnicalSkill
 }> = (props) => {
     return (
-        <div className="d-flex my-2 flip-card">
+        <div className="d-flex my-2 flip-card mx-auto">
             <div className="flip-card-inner">
                 <div className="flip-card-front text-dark shadow-lg text-center rounded-3 bg-light d-flex">
                     <div className="row m-auto w-75">
@@ -37,7 +37,7 @@ const TechnicalSkillTemplate: React.FunctionComponent<{
     }
 
     return (
-        <div className="col-3">
+        <div className="col-4">
             <h5 className="fw-bold">{props.category}</h5>
             {renderListTechnical()}
         </div>

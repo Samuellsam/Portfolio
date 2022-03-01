@@ -10,6 +10,7 @@ const PersonalInformationTemplate: React.FunctionComponent<{
     codeTextEnum: CodeTextLanguageEnum,
     leftImage?: string,
     rightImage?: string,
+    showProfileImg?: boolean,
     header?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 }> = (props) => {
 
@@ -33,8 +34,8 @@ const PersonalInformationTemplate: React.FunctionComponent<{
     return (
         <div className='row'>
             {props.leftImage != null?
-                <div className="col-6 text-center">
-                    <Image width={'530%'} height={'400%'} src={props.leftImage} alt='' className={'shadow-lg'}/>
+                <div className="col-6 text-center position-relative" style={{height: '350px'}} >
+                    <Image layout='fill' objectFit="contain" quality={100} priority={true} src={props.leftImage} alt='' className={'shadow-lg'}/>
                 </div> : undefined}
             <div className={getClassName()}>
                 <CodeText language={props.codeTextEnum} text={props.subTitle}/>
@@ -43,8 +44,12 @@ const PersonalInformationTemplate: React.FunctionComponent<{
                 {props.children}
             </div>
             {props.rightImage != null?
-                <div className="col-6 text-center">
-                    <Image width={'530%'} height={'400%'} src={props.rightImage} alt='' className={'shadow-lg'}/>
+                <div className="col-6 text-center position-relative" style={{height: '350px'}} >
+                    <Image layout='fill' objectFit="contain" quality={100} priority={true} src={props.rightImage} alt='' className={'shadow-lg'}/>
+                </div> : undefined}
+            {props.showProfileImg == true?
+                <div className="col-6 text-center position-relative" >
+                    <Image width={'300px'} height={'300px'} quality={100} priority={true} src={'/images/Profile.png'} alt=''/>
                 </div> : undefined}
         </div>
     );

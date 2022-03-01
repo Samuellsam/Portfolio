@@ -13,12 +13,12 @@ const Footer: React.FunctionComponent<{}> = (props) => {
         <div className='bg-dark text-white' id='footer'>
             <hr />
             <div className='p-3'>
-                <CustomText icon={faPhone} isTitle={true} startIcon={false} isBold={true}>Let's Talk</CustomText>
+                <CustomText icon={faPhone} isTitle={true} startIcon={false} isBold={true}>My Contact</CustomText>
                 <br />
                 <div className='container'>
                     <div className="d-flex w-100 justify-content-between">
                         <div className=''>
-                            <CustomText icon={faAddressBook} startIcon={true}>+62 85693455467</CustomText>
+                            {/* <CustomText icon={faAddressBook} startIcon={true}>+62 85693455467</CustomText> */}
                             <CustomText icon={faEnvelope} startIcon={true}>sagitariussamuel@gmail.com</CustomText>
                             <CustomText icon={faMapMarkerAlt} startIcon={true}>Indonesia, Jakarta</CustomText>
                         </div>
@@ -62,7 +62,7 @@ const MainLayout: React.FunctionComponent<{}> = (props) => {
                 <meta name="description" content="Sam's Portfolio Websites"/>
                 <title>{'Samuel.'}</title>
             </Head>
-            {/* <ReactParticle/> */}
+            <ReactParticle/>
             <div className='dark-blue-color text-white'>
                 {/* <Background source={'7b6fee91443299.5e3ade69d1289.gif'}/> */}
                 <Navbar/>
