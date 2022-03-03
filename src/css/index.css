@@ -54,6 +54,10 @@ a:hover {
   background-color: #21325e;
 }
 
+.darkest-blue-color {
+  background-color: #172341;
+}
+
 .swiperStyle {
   --swiper-navigation-color: #21325e;
   --swiper-pagination-color: yellow;

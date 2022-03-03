@@ -54,6 +54,9 @@ const Navbar: React.FunctionComponent<{}> = (props) => {
         if(fillBackground) {
             className += ' bg-white text-dark';
         }
+        else {
+            className += ' darkest-blue-color';
+        }
 
         return className;
     }
