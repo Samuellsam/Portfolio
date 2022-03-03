@@ -32,7 +32,7 @@ const PersonalInformationTemplate: React.FunctionComponent<{
     }
 
     return (
-        <div className='row'>
+        <div className='d-flex'>
             {props.leftImage != null?
                 <div className="col-6 text-center position-relative" style={{height: '350px'}} >
                     <Image layout='fill' objectFit="contain" quality={100} priority={true} src={props.leftImage} alt='' className={'shadow-lg'}/>

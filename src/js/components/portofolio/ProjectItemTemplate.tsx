@@ -13,10 +13,10 @@ const ProjectItemTemplate: React.FunctionComponent<{
             <h4 className="my-2">
                 {props.projectData.title}
             </h4>
-            <p className="text-start p-0 mb-3">
+            <small className="text-start p-0">
                 Created using : {props.projectData.listTech.join(', ')}
-            </p>
-            <p>{props.projectData.preview.previewDescription}</p>
+            </small>
+            <p className="mt-3">{props.projectData.preview.previewDescription}</p>
             <div className="text-center flex-grow-1">
                 <Link href={`portfolio/detail/${props.projectData.id}`}>
                     <a className="fw-bold text-warning flex-grow-1">View more</a>

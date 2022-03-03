@@ -190,7 +190,7 @@ const MyTechnicalSkills: React.FunctionComponent<{}> = (props) => {
             <div className="ms-5">
                <PersonalInformationTemplate codeTextEnum={CodeTextLanguageEnum.C} content={myTechnicalSkillsContent} placeEnd={false} subTitle={'My Technical Skills'}/>
             </div>
-            <div className="row d-flex text-center">
+            <div className="d-flex text-center">
                 <TechnicalSkillTemplate category="Programming Language" listTechnical={listProgrammingLanguage}/>
                 <TechnicalSkillTemplate category="Database" listTechnical={listDatabase}/>
                 <TechnicalSkillTemplate category="Framework" listTechnical={listFramework}/>

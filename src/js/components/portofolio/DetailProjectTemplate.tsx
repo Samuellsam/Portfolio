@@ -33,14 +33,14 @@ const DetailProjectTemplate: React.FunctionComponent<{
                 <div className="w-75 mx-auto">
                     <p>{projectData?.description}</p>
                     <br />
-                    <div className="d-flex justify-content-center">
-                        <ViewSourceCodeButton repositoryLinks={projectData?.repositoryLink}/>
-                        {projectData?.demoLink ? 
-                            <ViewDemoButton demoLink={projectData.demoLink}/> : undefined}
-                        {projectData?.filePath ? 
-                            <DownloadFileButton filePath={projectData.filePath}/> : undefined}
-                    </div>
                 </div>
+            </div>
+            <div className="d-flex justify-content-center">
+                <ViewSourceCodeButton repositoryLinks={projectData?.repositoryLink}/>
+                {projectData?.demoLink ? 
+                    <ViewDemoButton demoLink={projectData.demoLink}/> : undefined}
+                {projectData?.filePath ? 
+                    <DownloadFileButton filePath={projectData.filePath}/> : undefined}
             </div>
         </div>
     )
