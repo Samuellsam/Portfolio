@@ -12,7 +12,7 @@ const BackButton: React.FunctionComponent<{
 
     useEffect(() => {
         setBackButtonClassName(backBtnClassName+' back-button-show');
-    });
+    }, []);
 
     return (
         <Link href={props.href}>
