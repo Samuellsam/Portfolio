@@ -15,7 +15,7 @@ const Footer: React.FunctionComponent<{}> = (props) => {
             <div className='p-3'>
                 <CustomText icon={faPhone} isTitle={true} startIcon={false} isBold={true}>My Contact</CustomText>
                 <br />
-                <div className='container'>
+                <div>
                     <div className="d-flex w-100 justify-content-between">
                         <div className=''>
                             {/* <CustomText icon={faAddressBook} startIcon={true}>+62 85693455467</CustomText> */}

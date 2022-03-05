@@ -8,7 +8,7 @@ const ProjectItemTemplate: React.FunctionComponent<{
     projectData: Project
 }> = (props) => {
     return (
-        <div className="text-light p-3 my-3 shadow-lg light-blue-color rounded-3 position-relative">
+        <div className="text-light my-3 shadow-lg light-blue-color rounded-3 position-relative pt-3 h-100">
             <Image placeholder="blur" blurDataURL="/images/LoadingImagePlaceholder.png" className="mx-auto border border-light rounded-3" src={props.projectData.preview.previewImgPath} width={'200px'} height={'200px'} alt='project image'/>
             <h4 className="my-2">
                 {props.projectData.title}
@@ -17,9 +17,9 @@ const ProjectItemTemplate: React.FunctionComponent<{
                 Created using : {props.projectData.listTech.join(', ')}
             </small>
             <p className="mt-3">{props.projectData.preview.previewDescription}</p>
-            <div className="text-center flex-grow-1">
+            <div className="text-center">
                 <Link href={`portfolio/detail/${props.projectData.id}`}>
-                    <a className="fw-bold text-warning flex-grow-1">View more</a>
+                    <a className="fw-bold text-warning">View more</a>
                 </Link>
             </div>
         </div>

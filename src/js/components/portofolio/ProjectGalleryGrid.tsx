@@ -10,7 +10,7 @@ const ProjectGalleryGrid: React.FunctionComponent<{
         const projects = props.projects.map(
             (p, idx) => {
                 return (
-                    <div className="col-3 d-flex px-2" key={idx}>
+                    <div className="col-3 px-2 my-2" key={idx}>
                         <ProjectItemTemplate projectData={p}/>
                     </div>
                 )
