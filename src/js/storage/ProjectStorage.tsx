@@ -87,32 +87,32 @@ export const listIndividualProject: Portfolio[] = [
         ],
         filePath: '/assets/Othello.exe',
     },
-    {
-        id: 'calculator',
-        title: 'Calculator',
-        preview: {
-            previewImgPath: '/images/projects/Calculator/Calculator.png',
-            previewDescription: `This is desktop app that I made. 
-            I made this app during holiday.`
-        },
-        description: `This is a desktop app that I made using python.
-        I made this project because I interested to learn about python.
-        I made the GUI using tkinter.
-        This calculator supports basic operation, decimal number, and can read multiple operator and it will prioritize multiplication and division first.`,
-        listTech: ['Python', 'Tkinter'],
-        listScreenshootImgPath: [
-            '/images/projects/Calculator/Calculator.png',
-            '/images/projects/Calculator/image-1.png',
-            '/images/projects/Calculator/image-2.png',
-        ],
-        repositoryLink: [
-            {
-                label: 'Repository',
-                link: 'https://github.com/Samuellsam/Python-Tkinter-Calculator'
-            }
-        ],
-        filePath: '/assets/Calculator.exe',
-    },
+    // {
+    //     id: 'calculator',
+    //     title: 'Calculator',
+    //     preview: {
+    //         previewImgPath: '/images/projects/Calculator/Calculator.png',
+    //         previewDescription: `This is desktop app that I made. 
+    //         I made this app during holiday.`
+    //     },
+    //     description: `This is a desktop app that I made using python.
+    //     I made this project because I interested to learn about python.
+    //     I made the GUI using tkinter.
+    //     This calculator supports basic operation, decimal number, and can read multiple operator and it will prioritize multiplication and division first.`,
+    //     listTech: ['Python', 'Tkinter'],
+    //     listScreenshootImgPath: [
+    //         '/images/projects/Calculator/Calculator.png',
+    //         '/images/projects/Calculator/image-1.png',
+    //         '/images/projects/Calculator/image-2.png',
+    //     ],
+    //     repositoryLink: [
+    //         {
+    //             label: 'Repository',
+    //             link: 'https://github.com/Samuellsam/Python-Tkinter-Calculator'
+    //         }
+    //     ],
+    //     filePath: '/assets/Calculator.exe',
+    // },
     {
         id: 'tabs-creator',
         title: 'Tabs Creator',
