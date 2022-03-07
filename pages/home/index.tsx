@@ -52,9 +52,9 @@ const PersonalInformation: React.FunctionComponent<{}> = (props) => {
         I was born in Jakarta and I love to code.
         I've build some website and android app for many different purpose.
         Either to learn new programming language or framework, helping people, or just to fulfill my hobbies.
-        I have just graduated from university on 2022, majoring in Computer Science.
     `;
-    
+    // I have just graduated from university on 2022, majoring in Computer Science.
+
     return (
         <div className='ms-5'>
             <InformationTemplate showProfileImg={true} content={personalInformationContent} placeEnd={false} subTitle={"Who Am I?"} codeTextEnum={CodeTextLanguageEnum.C}
@@ -112,7 +112,7 @@ const MyJourney: React.FunctionComponent<{}> = (props) => {
             description: ''
         },
         {
-            education: 'Bina Nusantara University',
+            education: 'Bina Nusantara University (Majoring in Computer Science)',
             startYear: '2018',
             endYear: '2022',
             description: ''
