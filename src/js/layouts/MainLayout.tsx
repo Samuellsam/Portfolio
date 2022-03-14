@@ -25,7 +25,7 @@ const Footer: React.FunctionComponent<{}> = (props) => {
                         <div className='text-end'>
                             <a href='https://github.com/Samuellsam' target='_blank'><CustomText icon={faGithub} startIcon={false}>Github</CustomText></a>
                             <a href='https://gitlab.com/Samuellsam' target='_blank' ><CustomText icon={faGitlab} startIcon={false}>Gitlab</CustomText></a>
-                            <a href='https://www.linkedin.com/in/samuelssam/' target='_blank'><CustomText icon={faLinkedin} startIcon={false}>LinkedIn</CustomText></a>
+                            <a href='https://www.linkedin.com/in/samuellsam/' target='_blank'><CustomText icon={faLinkedin} startIcon={false}>LinkedIn</CustomText></a>
                         </div>
                     </div>
                 </div>
