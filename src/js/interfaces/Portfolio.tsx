@@ -8,6 +8,11 @@ export interface githubData {
     link: string;
 }
 
+export interface credentialData {
+    username: string;
+    password: string;
+}
+
 interface Project {
     id: string,
     title: string;
@@ -18,6 +23,7 @@ interface Project {
     repositoryLink: githubData[];
     demoLink?: string;
     filePath?: string;
+    credentials?: credentialData[];
 }
 
 export default Project;

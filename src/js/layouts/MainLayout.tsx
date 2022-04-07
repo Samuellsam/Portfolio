@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import { faAddressBook, faEnvelope, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAddressBook, faArrowAltCircleDown, faArrowAltCircleUp, faEnvelope, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGitlab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ScrollTopButton from "../components/buttons/ScrollTopButton";
 import CustomText from "../components/texts/CustomText";
@@ -18,7 +18,6 @@ const Footer: React.FunctionComponent<{}> = (props) => {
                 <div>
                     <div className="d-flex w-100 justify-content-between">
                         <div className=''>
-                            {/* <CustomText icon={faAddressBook} startIcon={true}>+62 85693455467</CustomText> */}
                             <CustomText icon={faEnvelope} startIcon={true}>sagitariussamuel@gmail.com</CustomText>
                             <CustomText icon={faMapMarkerAlt} startIcon={true}>Indonesia, Jakarta</CustomText>
                         </div>

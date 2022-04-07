@@ -7,7 +7,7 @@ const ViewSourceCodeButton: React.FunctionComponent<{
 }> = (props) => {
     const renderViewSourceCodeButton = () => {
         if(props.repositoryLinks && props.repositoryLinks.length > 0
-            && new Boolean(process.env["NEXT_PUBLIC_SHOW_REPOSITORY"]) == true
+            // && new Boolean(process.env["NEXT_PUBLIC_SHOW_REPOSITORY"]) == true
             ) {
             const buttons = props.repositoryLinks.map(g => {
                 return (

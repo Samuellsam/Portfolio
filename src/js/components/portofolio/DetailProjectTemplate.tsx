@@ -22,6 +22,10 @@ const DetailProjectTemplate: React.FunctionComponent<{
         setProjectData(project);
     }, [props.projectId]);
 
+    const renderCrendentials = () => {
+        return projectData?.credentials?.map(p => <p className="m-0">{`${p.username} - ${p.password}`}</p>);
+    }
+
     return (
         <div className="text-center">
             <CustomSwiper images={projectData?.listScreenshootImgPath as string[]}/>
@@ -32,6 +36,9 @@ const DetailProjectTemplate: React.FunctionComponent<{
                 <br />
                 <div className="w-75 mx-auto">
                     <p>{projectData?.description}</p>
+                    <br />
+                    <p className="fw-bold mb-0">Credentials (Username - Password)</p>
+                    {renderCrendentials()}
                     <br />
                 </div>
             </div>
