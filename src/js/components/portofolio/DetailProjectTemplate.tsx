@@ -37,7 +37,8 @@ const DetailProjectTemplate: React.FunctionComponent<{
                 <div className="w-75 mx-auto">
                     <p>{projectData?.description}</p>
                     <br />
-                    <p className="fw-bold mb-0">Credentials (Username - Password)</p>
+                    {projectData?.credentials ?
+                        <p className="fw-bold mb-0">Credentials (Username - Password)</p> : undefined}
                     {renderCrendentials()}
                     <br />
                 </div>
