@@ -8,7 +8,7 @@ const ProjectItemTemplate: React.FunctionComponent<{
     projectData: Project
 }> = (props) => {
     return (
-        <div className="text-light my-3 shadow-lg light-blue-color rounded-3 position-relative pt-3 h-100">
+        <div className="text-light my-3 shadow-lg light-blue-color rounded-3 position-relative pt-3 px-3 h-100">
             <Image placeholder="blur" blurDataURL="/images/LoadingImagePlaceholder.png" className="mx-auto border border-light rounded-3" src={props.projectData.preview.previewImgPath} width={'200px'} height={'200px'} alt='project image'/>
             <h4 className="my-2">
                 {props.projectData.title}
